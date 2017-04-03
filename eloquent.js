@@ -44,20 +44,21 @@ console.log(isEven(-1));
 // Your code here.
 function countChar(string, ch) {
   var numberOfLetter = 0;
-  for (var i = 0; i < string.length; i++)
-   if (string.charAt(i) == ch)
-  numberOfLetter ++;
+  for (var i = 0; i < string.length; i++) {
+   if (string.charAt(i) == ch) {
+    numberOfLetter +=1;
+}
+  }
     return numberOfLetter;
+
 
 };
 
+function countBs(string) {
+  return countChar(string, "B");
+}
 
-//function countBs(string) {
-// return countChar(string, "B");
-//};
-
-
-console.log(countBs("BBC", "B"));
+console.log(countBs("BBC"));
 // → 2
-//console.log(countChar("kakkerlak", "k"));
+console.log(countChar("kakkerlak", "k"));
 // → 4
